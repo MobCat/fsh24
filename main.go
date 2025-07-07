@@ -646,7 +646,7 @@ Press Enter to exit...`)
 }
 
 func main() {
-	fmt.Println("FSH24 - Fast Sample based Hash 24-byte.\nMobCat 2025\n")
+	
 	var (
 		outputFile string
 		verbose    bool
@@ -669,6 +669,10 @@ func main() {
 	}
 
 	args := pflag.Args()
+
+	if !jsonOutput {
+		fmt.Println("FSH24 - Fast Sample based Hash 24-byte.\nMobCat 2025\n")
+	}
 
 	if len(args) == 0 {
 		fmt.Println("Usage: fsh24 [flags] <file(s)|folder(s)|.fsh24 file>")
