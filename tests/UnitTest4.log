@@ -1,0 +1,837 @@
+2025-07-07 14:41:42,286 - INFO - fsh24_test_suite - FSH24 Test Suite initialized.
+2025-07-07 14:41:42,291 - INFO - fsh24_test_suite - 
+--- Setting up TestCalculateOptimalChunks ---
+2025-07-07 14:41:42,295 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpewvg00_6
+2025-07-07 14:41:42,296 - INFO - fsh24_test_suite -   Running test_custom_target_coverage
+2025-07-07 14:41:42,298 - INFO - fsh24_test_suite - --- Tearing down TestCalculateOptimalChunks ---
+2025-07-07 14:41:42,308 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpewvg00_6
+2025-07-07 14:41:42,310 - INFO - fsh24_test_suite - 
+--- Setting up TestCalculateOptimalChunks ---
+2025-07-07 14:41:42,312 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp7l5z9aa_
+2025-07-07 14:41:42,313 - INFO - fsh24_test_suite -   Running test_medium_file_coverage_calculation
+2025-07-07 14:41:42,318 - INFO - fsh24_test_suite - --- Tearing down TestCalculateOptimalChunks ---
+2025-07-07 14:41:42,325 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp7l5z9aa_
+2025-07-07 14:41:42,326 - INFO - fsh24_test_suite - 
+--- Setting up TestCalculateOptimalChunks ---
+2025-07-07 14:41:42,327 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp12_8zoj1
+2025-07-07 14:41:42,328 - INFO - fsh24_test_suite -   Running test_small_file_fixed_chunks
+2025-07-07 14:41:42,329 - INFO - fsh24_test_suite - --- Tearing down TestCalculateOptimalChunks ---
+2025-07-07 14:41:42,334 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp12_8zoj1
+2025-07-07 14:41:42,334 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:41:42,336 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpfcm6em3e
+2025-07-07 14:41:42,337 - INFO - fsh24_test_suite -   Running test_directory_with_files_non_recursive
+2025-07-07 14:41:42,338 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpfcm6em3e\dir1
+2025-07-07 14:41:42,339 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpfcm6em3e\dir1\file1.txt (10 bytes, type: random)
+2025-07-07 14:41:42,345 - INFO - fsh24_test_suite -   Created and hashed: file1.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:41:42,346 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpfcm6em3e\dir1\file2.txt (20 bytes, type: random)
+2025-07-07 14:41:42,354 - INFO - fsh24_test_suite -   Created and hashed: file2.txt (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:41:42,354 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpfcm6em3e\dir1\subdir\file3.txt (30 bytes, type: random)
+2025-07-07 14:41:42,361 - INFO - fsh24_test_suite -   Created and hashed: file3.txt (FSH24: 19D33A786A1387AE67F26D54D128BC09039EDA505EDEBF09, Chunks: 4)
+2025-07-07 14:41:42,364 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:41:42,377 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpfcm6em3e
+2025-07-07 14:41:42,378 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:41:42,380 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0139h3pw
+2025-07-07 14:41:42,381 - INFO - fsh24_test_suite -   Running test_directory_with_files_recursive
+2025-07-07 14:41:42,382 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0139h3pw\dir1
+2025-07-07 14:41:42,383 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0139h3pw\dir1\file1.txt (10 bytes, type: random)
+2025-07-07 14:41:42,390 - INFO - fsh24_test_suite -   Created and hashed: file1.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:41:42,391 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0139h3pw\dir1\file2.txt (20 bytes, type: random)
+2025-07-07 14:41:42,398 - INFO - fsh24_test_suite -   Created and hashed: file2.txt (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:41:42,399 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0139h3pw\dir1\subdir1
+2025-07-07 14:41:42,400 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0139h3pw\dir1\subdir1\file3.txt (30 bytes, type: random)
+2025-07-07 14:41:42,406 - INFO - fsh24_test_suite -   Created and hashed: file3.txt (FSH24: 19D33A786A1387AE67F26D54D128BC09039EDA505EDEBF09, Chunks: 4)
+2025-07-07 14:41:42,408 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0139h3pw\dir1\subdir1\subdir2
+2025-07-07 14:41:42,408 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0139h3pw\dir1\subdir1\subdir2\file4.txt (40 bytes, type: random)
+2025-07-07 14:41:42,416 - INFO - fsh24_test_suite -   Created and hashed: file4.txt (FSH24: FFCF11AA5D9CBF2D42B2A4D3F6C29371135FC69C9E3CA09D, Chunks: 4)
+2025-07-07 14:41:42,419 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:41:42,436 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0139h3pw
+2025-07-07 14:41:42,436 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:41:42,438 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplpwrlzb8
+2025-07-07 14:41:42,439 - INFO - fsh24_test_suite -   Running test_mixed_inputs
+2025-07-07 14:41:42,439 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplpwrlzb8\fileA.log (10 bytes, type: random)
+2025-07-07 14:41:42,446 - INFO - fsh24_test_suite -   Created and hashed: fileA.log (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:41:42,447 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplpwrlzb8\dirB
+2025-07-07 14:41:42,448 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplpwrlzb8\dirB\data.dat (20 bytes, type: random)
+2025-07-07 14:41:42,456 - INFO - fsh24_test_suite -   Created and hashed: data.dat (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:41:42,456 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplpwrlzb8\fileC.txt (30 bytes, type: random)
+2025-07-07 14:41:42,463 - INFO - fsh24_test_suite -   Created and hashed: fileC.txt (FSH24: 19D33A786A1387AE67F26D54D128BC09039EDA505EDEBF09, Chunks: 4)
+2025-07-07 14:41:42,468 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:41:42,480 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplpwrlzb8
+2025-07-07 14:41:42,481 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:41:42,483 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpyvc5r96v
+2025-07-07 14:41:42,484 - INFO - fsh24_test_suite -   Running test_multiple_files
+2025-07-07 14:41:42,484 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpyvc5r96v\fileA.txt (10 bytes, type: random)
+2025-07-07 14:41:42,492 - INFO - fsh24_test_suite -   Created and hashed: fileA.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:41:42,492 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpyvc5r96v\fileB.txt (20 bytes, type: random)
+2025-07-07 14:41:42,500 - INFO - fsh24_test_suite -   Created and hashed: fileB.txt (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:41:42,503 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:41:42,511 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpyvc5r96v
+2025-07-07 14:41:42,511 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:41:42,512 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpjdxvb6tj
+2025-07-07 14:41:42,513 - INFO - fsh24_test_suite -   Running test_non_existent_path
+2025-07-07 14:41:42,514 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:41:42,520 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpjdxvb6tj
+2025-07-07 14:41:42,521 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:41:42,522 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpvgbbb1pj
+2025-07-07 14:41:42,523 - INFO - fsh24_test_suite -   Running test_single_empty_directory_non_recursive
+2025-07-07 14:41:42,524 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpvgbbb1pj\dir1
+2025-07-07 14:41:42,525 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:41:42,534 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpvgbbb1pj
+2025-07-07 14:41:42,535 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:41:42,536 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp4o8u24k8
+2025-07-07 14:41:42,537 - INFO - fsh24_test_suite -   Running test_single_file
+2025-07-07 14:41:42,538 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp4o8u24k8\file1.txt (10 bytes, type: random)
+2025-07-07 14:41:42,545 - INFO - fsh24_test_suite -   Created and hashed: file1.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:41:42,547 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:41:42,553 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp4o8u24k8
+2025-07-07 14:41:42,554 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:41:42,556 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmprpyxwf6p
+2025-07-07 14:41:42,556 - INFO - fsh24_test_suite -   Running test_empty_file_hash
+2025-07-07 14:41:42,557 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmprpyxwf6p\empty.bin (0 bytes, type: random)
+2025-07-07 14:41:42,563 - INFO - fsh24_test_suite -   Created and hashed: empty.bin (FSH24: AA407E6B93C58EA41D410393085691E21412EB43276BCDF9, Chunks: 4)
+2025-07-07 14:41:42,568 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:41:42,574 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmprpyxwf6p
+2025-07-07 14:41:42,575 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:41:42,576 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpyssr_ob1
+2025-07-07 14:41:42,577 - INFO - fsh24_test_suite -   Running test_file_slightly_larger_than_4MB
+2025-07-07 14:41:42,578 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpyssr_ob1\slightly_larger.bin (4194314 bytes, type: random)
+2025-07-07 14:41:43,473 - INFO - fsh24_test_suite -   Created and hashed: slightly_larger.bin (FSH24: 974E3D2C98EA6E88571E799DD293AB7425EC6DB4640E38DF, Chunks: 4)
+2025-07-07 14:41:43,491 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:41:43,509 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpyssr_ob1
+2025-07-07 14:41:43,510 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:41:43,513 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpnajmfphy
+2025-07-07 14:41:43,513 - INFO - fsh24_test_suite -   Running test_hash_consistency_same_file
+2025-07-07 14:41:43,514 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpnajmfphy\test1.bin (10485760 bytes, type: random)
+2025-07-07 14:41:45,750 - INFO - fsh24_test_suite -   Created and hashed: test1.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 14:41:45,796 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:41:45,816 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpnajmfphy
+2025-07-07 14:41:45,817 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:41:45,819 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpd267e828
+2025-07-07 14:41:45,820 - INFO - fsh24_test_suite -   Running test_hash_differs_for_append
+2025-07-07 14:41:45,821 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpd267e828\test_append.bin (10485760 bytes, type: random)
+2025-07-07 14:41:47,985 - INFO - fsh24_test_suite -   Created and hashed: test_append.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 14:41:48,015 - INFO - fsh24_test_suite -   Corrupting file: test_append.bin with type 'append' {'append_bytes': 100}
+2025-07-07 14:41:48,122 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:41:48,141 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpd267e828
+2025-07-07 14:41:48,142 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:41:48,145 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpnqqynydq
+2025-07-07 14:41:48,145 - INFO - fsh24_test_suite -   Running test_hash_differs_for_bit_flip
+2025-07-07 14:41:48,146 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpnqqynydq\test_corrupt.bin (20971520 bytes, type: random)
+2025-07-07 14:41:52,753 - INFO - fsh24_test_suite -   Created and hashed: test_corrupt.bin (FSH24: 818FC4A6599EAB603A2B679E42EDD1C51EECCFF4B1DB7229, Chunks: 4)
+2025-07-07 14:41:52,798 - INFO - fsh24_test_suite -   Corrupting file: test_corrupt.bin with type 'bit_flip' {'offset': 10485860, 'bit_index': 0}
+2025-07-07 14:41:52,850 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:41:52,876 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpnqqynydq
+2025-07-07 14:41:52,877 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:41:52,880 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp01mxzb3s
+2025-07-07 14:41:52,881 - INFO - fsh24_test_suite -   Running test_hash_differs_for_byte_change
+2025-07-07 14:41:52,882 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp01mxzb3s\test_corrupt_byte.bin (20971520 bytes, type: random)
+2025-07-07 14:41:57,251 - INFO - fsh24_test_suite -   Created and hashed: test_corrupt_byte.bin (FSH24: 818FC4A6599EAB603A2B679E42EDD1C51EECCFF4B1DB7229, Chunks: 4)
+2025-07-07 14:41:57,290 - INFO - fsh24_test_suite -   Corrupting file: test_corrupt_byte.bin with type 'byte_change' {'offset': 5242880, 'new_byte': 170}
+2025-07-07 14:41:57,343 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:41:57,358 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp01mxzb3s
+2025-07-07 14:41:57,359 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:41:57,361 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkluqn6uu
+2025-07-07 14:41:57,362 - INFO - fsh24_test_suite -   Running test_hash_differs_for_different_content
+2025-07-07 14:41:57,362 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkluqn6uu\test_diff1.bin (1048576 bytes, type: random)
+2025-07-07 14:41:57,602 - INFO - fsh24_test_suite -   Created and hashed: test_diff1.bin (FSH24: 471BCD1C34261B46CB3A02813E46D11BFA04EFC107907318, Chunks: 4)
+2025-07-07 14:41:57,603 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkluqn6uu\test_diff2.bin (1048576 bytes, type: sequential)
+2025-07-07 14:41:57,748 - INFO - fsh24_test_suite -   Created and hashed: test_diff2.bin (FSH24: D2BA9A12E5B3608ABE720224E18B4A94D0EFABBF38A1E5B7, Chunks: 4)
+2025-07-07 14:41:57,759 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:41:57,768 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkluqn6uu
+2025-07-07 14:41:57,769 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:41:57,770 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpohj535mt
+2025-07-07 14:41:57,770 - INFO - fsh24_test_suite -   Running test_hash_differs_for_truncate
+2025-07-07 14:41:57,771 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpohj535mt\test_truncate.bin (10485760 bytes, type: random)
+2025-07-07 14:41:59,756 - INFO - fsh24_test_suite -   Created and hashed: test_truncate.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 14:41:59,778 - INFO - fsh24_test_suite -   Corrupting file: test_truncate.bin with type 'truncate' {'new_size': 5242880}
+2025-07-07 14:41:59,812 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:41:59,821 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpohj535mt
+2025-07-07 14:41:59,821 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:41:59,823 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpwv4rvgzk
+2025-07-07 14:41:59,823 - INFO - fsh24_test_suite -   Running test_middle_chunk_distribution
+2025-07-07 14:41:59,824 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpwv4rvgzk\large_file_middle_chunks.bin (1717986918.4 bytes, type: random)
+2025-07-07 14:47:55,039 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:47:55,214 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpwv4rvgzk
+2025-07-07 14:47:55,214 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:47:55,216 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpdecopmcm
+2025-07-07 14:47:55,216 - INFO - fsh24_test_suite -   Running test_small_file_hash_structure
+2025-07-07 14:47:55,217 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpdecopmcm\small_chunk.bin (1048576 bytes, type: random)
+2025-07-07 14:47:55,465 - INFO - fsh24_test_suite -   Created and hashed: small_chunk.bin (FSH24: 471BCD1C34261B46CB3A02813E46D11BFA04EFC107907318, Chunks: 4)
+2025-07-07 14:47:55,473 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:47:55,496 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpdecopmcm
+2025-07-07 14:47:55,497 - INFO - fsh24_test_suite - 
+--- Setting up TestGenerateHashFileMultiple ---
+2025-07-07 14:47:55,499 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpo19wkjql
+2025-07-07 14:47:55,500 - INFO - fsh24_test_suite -   Running test_generate_hash_file_with_missing_file_in_list
+2025-07-07 14:47:55,500 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpo19wkjql\exist.bin (10240 bytes, type: random)
+2025-07-07 14:47:55,511 - INFO - fsh24_test_suite -   Created and hashed: exist.bin (FSH24: 9830039760C68E1C588A6668EE846F1D30E503477B95F9E3, Chunks: 4)
+2025-07-07 14:47:55,519 - INFO - fsh24_test_suite - --- Tearing down TestGenerateHashFileMultiple ---
+2025-07-07 14:47:55,527 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpo19wkjql
+2025-07-07 14:47:55,528 - INFO - fsh24_test_suite - 
+--- Setting up TestGenerateHashFileMultiple ---
+2025-07-07 14:47:55,529 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpy7nbfohx
+2025-07-07 14:47:55,530 - INFO - fsh24_test_suite -   Running test_generate_multiple_files_hash_file
+2025-07-07 14:47:55,530 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpy7nbfohx\hash_multi1.bin (10240 bytes, type: random)
+2025-07-07 14:47:55,540 - INFO - fsh24_test_suite -   Created and hashed: hash_multi1.bin (FSH24: 9830039760C68E1C588A6668EE846F1D30E503477B95F9E3, Chunks: 4)
+2025-07-07 14:47:55,540 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpy7nbfohx\hash_multi2.bin (20971520 bytes, type: random)
+2025-07-07 14:47:59,835 - INFO - fsh24_test_suite -   Created and hashed: hash_multi2.bin (FSH24: D2E866CC1438F48C673F264AE8CB4A1B443344FDE99C3974, Chunks: 4)
+2025-07-07 14:47:59,837 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpy7nbfohx\hash_multi3.bin (524288000 bytes, type: random)
+2025-07-07 14:50:43,604 - INFO - fsh24_test_suite - FSH24 Test Suite initialized.
+2025-07-07 14:50:43,608 - INFO - fsh24_test_suite - 
+--- Setting up TestCalculateOptimalChunks ---
+2025-07-07 14:50:43,612 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp51mx3vcw
+2025-07-07 14:50:43,613 - INFO - fsh24_test_suite -   Running test_custom_target_coverage
+2025-07-07 14:50:43,614 - INFO - fsh24_test_suite - --- Tearing down TestCalculateOptimalChunks ---
+2025-07-07 14:50:43,625 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp51mx3vcw
+2025-07-07 14:50:43,627 - INFO - fsh24_test_suite - 
+--- Setting up TestCalculateOptimalChunks ---
+2025-07-07 14:50:43,628 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpaquwkfdj
+2025-07-07 14:50:43,629 - INFO - fsh24_test_suite -   Running test_medium_file_coverage_calculation
+2025-07-07 14:50:43,632 - INFO - fsh24_test_suite - --- Tearing down TestCalculateOptimalChunks ---
+2025-07-07 14:50:43,637 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpaquwkfdj
+2025-07-07 14:50:43,638 - INFO - fsh24_test_suite - 
+--- Setting up TestCalculateOptimalChunks ---
+2025-07-07 14:50:43,639 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpz35dk9cy
+2025-07-07 14:50:43,640 - INFO - fsh24_test_suite -   Running test_small_file_fixed_chunks
+2025-07-07 14:50:43,640 - INFO - fsh24_test_suite - --- Tearing down TestCalculateOptimalChunks ---
+2025-07-07 14:50:43,645 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpz35dk9cy
+2025-07-07 14:50:43,646 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:50:43,647 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpcqhjrd_s
+2025-07-07 14:50:43,649 - INFO - fsh24_test_suite -   Running test_directory_with_files_non_recursive
+2025-07-07 14:50:43,650 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpcqhjrd_s\dir1
+2025-07-07 14:50:43,650 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpcqhjrd_s\dir1\file1.txt (10 bytes, type: random)
+2025-07-07 14:50:43,658 - INFO - fsh24_test_suite -   Created and hashed: file1.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:50:43,659 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpcqhjrd_s\dir1\file2.txt (20 bytes, type: random)
+2025-07-07 14:50:43,666 - INFO - fsh24_test_suite -   Created and hashed: file2.txt (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:50:43,667 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpcqhjrd_s\dir1\subdir\file3.txt (30 bytes, type: random)
+2025-07-07 14:50:43,674 - INFO - fsh24_test_suite -   Created and hashed: file3.txt (FSH24: 19D33A786A1387AE67F26D54D128BC09039EDA505EDEBF09, Chunks: 4)
+2025-07-07 14:50:43,679 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:50:43,693 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpcqhjrd_s
+2025-07-07 14:50:43,694 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:50:43,696 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplbsarz5m
+2025-07-07 14:50:43,696 - INFO - fsh24_test_suite -   Running test_directory_with_files_recursive
+2025-07-07 14:50:43,697 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplbsarz5m\dir1
+2025-07-07 14:50:43,698 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplbsarz5m\dir1\file1.txt (10 bytes, type: random)
+2025-07-07 14:50:43,705 - INFO - fsh24_test_suite -   Created and hashed: file1.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:50:43,706 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplbsarz5m\dir1\file2.txt (20 bytes, type: random)
+2025-07-07 14:50:43,713 - INFO - fsh24_test_suite -   Created and hashed: file2.txt (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:50:43,714 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplbsarz5m\dir1\subdir1
+2025-07-07 14:50:43,714 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplbsarz5m\dir1\subdir1\file3.txt (30 bytes, type: random)
+2025-07-07 14:50:43,722 - INFO - fsh24_test_suite -   Created and hashed: file3.txt (FSH24: 19D33A786A1387AE67F26D54D128BC09039EDA505EDEBF09, Chunks: 4)
+2025-07-07 14:50:43,723 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplbsarz5m\dir1\subdir1\subdir2
+2025-07-07 14:50:43,723 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplbsarz5m\dir1\subdir1\subdir2\file4.txt (40 bytes, type: random)
+2025-07-07 14:50:43,730 - INFO - fsh24_test_suite -   Created and hashed: file4.txt (FSH24: FFCF11AA5D9CBF2D42B2A4D3F6C29371135FC69C9E3CA09D, Chunks: 4)
+2025-07-07 14:50:43,734 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:50:43,750 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplbsarz5m
+2025-07-07 14:50:43,751 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:50:43,752 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp5ff88quh
+2025-07-07 14:50:43,753 - INFO - fsh24_test_suite -   Running test_mixed_inputs
+2025-07-07 14:50:43,754 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp5ff88quh\fileA.log (10 bytes, type: random)
+2025-07-07 14:50:43,761 - INFO - fsh24_test_suite -   Created and hashed: fileA.log (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:50:43,762 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp5ff88quh\dirB
+2025-07-07 14:50:43,762 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp5ff88quh\dirB\data.dat (20 bytes, type: random)
+2025-07-07 14:50:43,770 - INFO - fsh24_test_suite -   Created and hashed: data.dat (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:50:43,771 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp5ff88quh\fileC.txt (30 bytes, type: random)
+2025-07-07 14:50:43,778 - INFO - fsh24_test_suite -   Created and hashed: fileC.txt (FSH24: 19D33A786A1387AE67F26D54D128BC09039EDA505EDEBF09, Chunks: 4)
+2025-07-07 14:50:43,782 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:50:43,794 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp5ff88quh
+2025-07-07 14:50:43,795 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:50:43,796 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpbu8gwv08
+2025-07-07 14:50:43,797 - INFO - fsh24_test_suite -   Running test_multiple_files
+2025-07-07 14:50:43,797 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpbu8gwv08\fileA.txt (10 bytes, type: random)
+2025-07-07 14:50:43,805 - INFO - fsh24_test_suite -   Created and hashed: fileA.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:50:43,806 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpbu8gwv08\fileB.txt (20 bytes, type: random)
+2025-07-07 14:50:43,812 - INFO - fsh24_test_suite -   Created and hashed: fileB.txt (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:50:43,815 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:50:43,824 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpbu8gwv08
+2025-07-07 14:50:43,824 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:50:43,826 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpj5ifmp3r
+2025-07-07 14:50:43,829 - INFO - fsh24_test_suite -   Running test_non_existent_path
+2025-07-07 14:50:43,830 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:50:43,836 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpj5ifmp3r
+2025-07-07 14:50:43,837 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:50:43,838 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmptpvmuz19
+2025-07-07 14:50:43,838 - INFO - fsh24_test_suite -   Running test_single_empty_directory_non_recursive
+2025-07-07 14:50:43,839 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmptpvmuz19\dir1
+2025-07-07 14:50:43,841 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:50:43,847 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmptpvmuz19
+2025-07-07 14:50:43,848 - INFO - fsh24_test_suite - 
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:50:43,849 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpf54m0g_q
+2025-07-07 14:50:43,850 - INFO - fsh24_test_suite -   Running test_single_file
+2025-07-07 14:50:43,850 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpf54m0g_q\file1.txt (10 bytes, type: random)
+2025-07-07 14:50:43,857 - INFO - fsh24_test_suite -   Created and hashed: file1.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:50:43,858 - INFO - fsh24_test_suite - --- Tearing down TestExpandFilePaths ---
+2025-07-07 14:50:43,865 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpf54m0g_q
+2025-07-07 14:50:43,865 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:50:43,867 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpplll9kq4
+2025-07-07 14:50:43,867 - INFO - fsh24_test_suite -   Running test_empty_file_hash
+2025-07-07 14:50:43,868 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpplll9kq4\empty.bin (0 bytes, type: random)
+2025-07-07 14:50:43,874 - INFO - fsh24_test_suite -   Created and hashed: empty.bin (FSH24: AA407E6B93C58EA41D410393085691E21412EB43276BCDF9, Chunks: 4)
+2025-07-07 14:50:43,877 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:50:43,884 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpplll9kq4
+2025-07-07 14:50:43,885 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:50:43,886 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp4p5fny70
+2025-07-07 14:50:43,887 - INFO - fsh24_test_suite -   Running test_file_slightly_larger_than_4MB
+2025-07-07 14:50:43,887 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp4p5fny70\slightly_larger.bin (4194314 bytes, type: random)
+2025-07-07 14:50:44,800 - INFO - fsh24_test_suite -   Created and hashed: slightly_larger.bin (FSH24: 974E3D2C98EA6E88571E799DD293AB7425EC6DB4640E38DF, Chunks: 4)
+2025-07-07 14:50:44,815 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:50:44,825 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp4p5fny70
+2025-07-07 14:50:44,826 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:50:44,827 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpdt49n0s1
+2025-07-07 14:50:44,828 - INFO - fsh24_test_suite -   Running test_hash_consistency_same_file
+2025-07-07 14:50:44,828 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpdt49n0s1\test1.bin (10485760 bytes, type: random)
+2025-07-07 14:50:47,067 - INFO - fsh24_test_suite -   Created and hashed: test1.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 14:50:47,114 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:50:47,131 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpdt49n0s1
+2025-07-07 14:50:47,132 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:50:47,134 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpje6exryu
+2025-07-07 14:50:47,134 - INFO - fsh24_test_suite -   Running test_hash_differs_for_append
+2025-07-07 14:50:47,135 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpje6exryu\test_append.bin (10485760 bytes, type: random)
+2025-07-07 14:50:49,383 - INFO - fsh24_test_suite -   Created and hashed: test_append.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 14:50:49,410 - INFO - fsh24_test_suite -   Corrupting a copy of 'test_append.bin' to 'corrupted_test_append.bin' with type 'append' {'append_bytes': 100}
+2025-07-07 14:50:49,995 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:50:50,022 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpje6exryu
+2025-07-07 14:50:50,023 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:50:50,026 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpf7wnh3oo
+2025-07-07 14:50:50,026 - INFO - fsh24_test_suite -   Running test_hash_differs_for_bit_flip
+2025-07-07 14:50:50,027 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpf7wnh3oo\test_corrupt.bin (20971520 bytes, type: random)
+2025-07-07 14:50:54,178 - INFO - fsh24_test_suite -   Created and hashed: test_corrupt.bin (FSH24: 818FC4A6599EAB603A2B679E42EDD1C51EECCFF4B1DB7229, Chunks: 4)
+2025-07-07 14:50:54,217 - INFO - fsh24_test_suite -   Corrupting a copy of 'test_corrupt.bin' to 'corrupted_test_corrupt.bin' with type 'bit_flip' {'offset': 10485860, 'bit_index': 0}
+2025-07-07 14:50:55,281 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:50:55,299 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpf7wnh3oo
+2025-07-07 14:50:55,301 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:50:55,302 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpbj1qttay
+2025-07-07 14:50:55,303 - INFO - fsh24_test_suite -   Running test_hash_differs_for_byte_change
+2025-07-07 14:50:55,303 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpbj1qttay\test_corrupt_byte.bin (20971520 bytes, type: random)
+2025-07-07 14:50:59,508 - INFO - fsh24_test_suite -   Created and hashed: test_corrupt_byte.bin (FSH24: 818FC4A6599EAB603A2B679E42EDD1C51EECCFF4B1DB7229, Chunks: 4)
+2025-07-07 14:50:59,548 - INFO - fsh24_test_suite -   Corrupting a copy of 'test_corrupt_byte.bin' to 'corrupted_test_corrupt_byte.bin' with type 'byte_change' {'offset': 5242880, 'new_byte': 170}
+2025-07-07 14:51:00,698 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:51:00,718 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpbj1qttay
+2025-07-07 14:51:00,719 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:51:00,721 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp2bht_bet
+2025-07-07 14:51:00,721 - INFO - fsh24_test_suite -   Running test_hash_differs_for_different_content
+2025-07-07 14:51:00,722 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp2bht_bet\test_diff1.bin (1048576 bytes, type: random)
+2025-07-07 14:51:00,917 - INFO - fsh24_test_suite -   Created and hashed: test_diff1.bin (FSH24: 471BCD1C34261B46CB3A02813E46D11BFA04EFC107907318, Chunks: 4)
+2025-07-07 14:51:00,919 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp2bht_bet\test_diff2.bin (1048576 bytes, type: sequential)
+2025-07-07 14:51:01,118 - INFO - fsh24_test_suite -   Created and hashed: test_diff2.bin (FSH24: D2BA9A12E5B3608ABE720224E18B4A94D0EFABBF38A1E5B7, Chunks: 4)
+2025-07-07 14:51:01,128 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:51:01,138 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp2bht_bet
+2025-07-07 14:51:01,138 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:51:01,140 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmptzuqjf4v
+2025-07-07 14:51:01,140 - INFO - fsh24_test_suite -   Running test_hash_differs_for_truncate
+2025-07-07 14:51:01,141 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmptzuqjf4v\test_truncate.bin (10485760 bytes, type: random)
+2025-07-07 14:51:03,370 - INFO - fsh24_test_suite -   Created and hashed: test_truncate.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 14:51:03,400 - INFO - fsh24_test_suite -   Corrupting a copy of 'test_truncate.bin' to 'corrupted_test_truncate.bin' with type 'truncate' {'new_size': 5242880}
+2025-07-07 14:51:03,687 - INFO - fsh24_test_suite - --- Tearing down TestFastSampleHash ---
+2025-07-07 14:51:03,701 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmptzuqjf4v
+2025-07-07 14:51:03,702 - INFO - fsh24_test_suite - 
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:51:03,704 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0i65aith
+2025-07-07 14:51:03,704 - INFO - fsh24_test_suite -   Running test_middle_chunk_distribution
+2025-07-07 14:51:03,705 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp0i65aith\large_file_middle_chunks.bin (1717986918.4 bytes, type: random)
+2025-07-07 14:52:32,876 - INFO - fsh24_test_suite - FSH24 Test Suite initialized.
+2025-07-07 14:52:32,880 - INFO - fsh24_test_suite - 
+
+--- Setting up TestCalculateOptimalChunks ---
+2025-07-07 14:52:32,884 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpovd39kz5
+2025-07-07 14:52:32,886 - INFO - fsh24_test_suite -   Running test_custom_target_coverage
+2025-07-07 14:52:32,887 - INFO - fsh24_test_suite - 
+--- Tearing down TestCalculateOptimalChunks ---
+2025-07-07 14:52:32,898 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpovd39kz5
+2025-07-07 14:52:32,899 - INFO - fsh24_test_suite - 
+
+--- Setting up TestCalculateOptimalChunks ---
+2025-07-07 14:52:32,900 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpt9728tvb
+2025-07-07 14:52:32,900 - INFO - fsh24_test_suite -   Running test_medium_file_coverage_calculation
+2025-07-07 14:52:32,904 - INFO - fsh24_test_suite - 
+--- Tearing down TestCalculateOptimalChunks ---
+2025-07-07 14:52:32,909 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpt9728tvb
+2025-07-07 14:52:32,909 - INFO - fsh24_test_suite - 
+
+--- Setting up TestCalculateOptimalChunks ---
+2025-07-07 14:52:32,911 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmppchynsvr
+2025-07-07 14:52:32,911 - INFO - fsh24_test_suite -   Running test_small_file_fixed_chunks
+2025-07-07 14:52:32,912 - INFO - fsh24_test_suite - 
+--- Tearing down TestCalculateOptimalChunks ---
+2025-07-07 14:52:32,916 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmppchynsvr
+2025-07-07 14:52:32,917 - INFO - fsh24_test_suite - 
+
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:52:32,919 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp712n9rm5
+2025-07-07 14:52:32,920 - INFO - fsh24_test_suite -   Running test_directory_with_files_non_recursive
+2025-07-07 14:52:32,921 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp712n9rm5\dir1
+2025-07-07 14:52:32,922 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp712n9rm5\dir1\file1.txt (10 bytes, type: random)
+2025-07-07 14:52:32,929 - INFO - fsh24_test_suite -   Created and hashed: file1.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:52:32,930 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp712n9rm5\dir1\file2.txt (20 bytes, type: random)
+2025-07-07 14:52:32,942 - INFO - fsh24_test_suite -   Created and hashed: file2.txt (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:52:32,943 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp712n9rm5\dir1\subdir\file3.txt (30 bytes, type: random)
+2025-07-07 14:52:32,950 - INFO - fsh24_test_suite -   Created and hashed: file3.txt (FSH24: 19D33A786A1387AE67F26D54D128BC09039EDA505EDEBF09, Chunks: 4)
+2025-07-07 14:52:32,955 - INFO - fsh24_test_suite - 
+--- Tearing down TestExpandFilePaths ---
+2025-07-07 14:52:32,968 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp712n9rm5
+2025-07-07 14:52:32,969 - INFO - fsh24_test_suite - 
+
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:52:32,971 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpc0uv_qc9
+2025-07-07 14:52:32,971 - INFO - fsh24_test_suite -   Running test_directory_with_files_recursive
+2025-07-07 14:52:32,973 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpc0uv_qc9\dir1
+2025-07-07 14:52:32,973 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpc0uv_qc9\dir1\file1.txt (10 bytes, type: random)
+2025-07-07 14:52:32,981 - INFO - fsh24_test_suite -   Created and hashed: file1.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:52:32,981 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpc0uv_qc9\dir1\file2.txt (20 bytes, type: random)
+2025-07-07 14:52:32,989 - INFO - fsh24_test_suite -   Created and hashed: file2.txt (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:52:32,991 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpc0uv_qc9\dir1\subdir1
+2025-07-07 14:52:32,992 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpc0uv_qc9\dir1\subdir1\file3.txt (30 bytes, type: random)
+2025-07-07 14:52:33,000 - INFO - fsh24_test_suite -   Created and hashed: file3.txt (FSH24: 19D33A786A1387AE67F26D54D128BC09039EDA505EDEBF09, Chunks: 4)
+2025-07-07 14:52:33,001 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpc0uv_qc9\dir1\subdir1\subdir2
+2025-07-07 14:52:33,002 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpc0uv_qc9\dir1\subdir1\subdir2\file4.txt (40 bytes, type: random)
+2025-07-07 14:52:33,009 - INFO - fsh24_test_suite -   Created and hashed: file4.txt (FSH24: FFCF11AA5D9CBF2D42B2A4D3F6C29371135FC69C9E3CA09D, Chunks: 4)
+2025-07-07 14:52:33,013 - INFO - fsh24_test_suite - 
+--- Tearing down TestExpandFilePaths ---
+2025-07-07 14:52:33,029 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpc0uv_qc9
+2025-07-07 14:52:33,030 - INFO - fsh24_test_suite - 
+
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:52:33,031 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpj8xtzd37
+2025-07-07 14:52:33,032 - INFO - fsh24_test_suite -   Running test_mixed_inputs
+2025-07-07 14:52:33,033 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpj8xtzd37\fileA.log (10 bytes, type: random)
+2025-07-07 14:52:33,040 - INFO - fsh24_test_suite -   Created and hashed: fileA.log (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:52:33,041 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpj8xtzd37\dirB
+2025-07-07 14:52:33,041 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpj8xtzd37\dirB\data.dat (20 bytes, type: random)
+2025-07-07 14:52:33,049 - INFO - fsh24_test_suite -   Created and hashed: data.dat (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:52:33,050 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpj8xtzd37\fileC.txt (30 bytes, type: random)
+2025-07-07 14:52:33,057 - INFO - fsh24_test_suite -   Created and hashed: fileC.txt (FSH24: 19D33A786A1387AE67F26D54D128BC09039EDA505EDEBF09, Chunks: 4)
+2025-07-07 14:52:33,060 - INFO - fsh24_test_suite - 
+--- Tearing down TestExpandFilePaths ---
+2025-07-07 14:52:33,071 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpj8xtzd37
+2025-07-07 14:52:33,072 - INFO - fsh24_test_suite - 
+
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:52:33,073 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp9lbe29un
+2025-07-07 14:52:33,074 - INFO - fsh24_test_suite -   Running test_multiple_files
+2025-07-07 14:52:33,074 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp9lbe29un\fileA.txt (10 bytes, type: random)
+2025-07-07 14:52:33,082 - INFO - fsh24_test_suite -   Created and hashed: fileA.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:52:33,083 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp9lbe29un\fileB.txt (20 bytes, type: random)
+2025-07-07 14:52:33,092 - INFO - fsh24_test_suite -   Created and hashed: fileB.txt (FSH24: ED052C49264C646AE50E45DB3E52EC5482393D17081ACC10, Chunks: 4)
+2025-07-07 14:52:33,095 - INFO - fsh24_test_suite - 
+--- Tearing down TestExpandFilePaths ---
+2025-07-07 14:52:33,103 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp9lbe29un
+2025-07-07 14:52:33,104 - INFO - fsh24_test_suite - 
+
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:52:33,105 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpm87btcux
+2025-07-07 14:52:33,106 - INFO - fsh24_test_suite -   Running test_non_existent_path
+2025-07-07 14:52:33,107 - INFO - fsh24_test_suite - 
+--- Tearing down TestExpandFilePaths ---
+2025-07-07 14:52:33,112 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpm87btcux
+2025-07-07 14:52:33,113 - INFO - fsh24_test_suite - 
+
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:52:33,115 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpq67zpwoq
+2025-07-07 14:52:33,116 - INFO - fsh24_test_suite -   Running test_single_empty_directory_non_recursive
+2025-07-07 14:52:33,117 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpq67zpwoq\dir1
+2025-07-07 14:52:33,118 - INFO - fsh24_test_suite - 
+--- Tearing down TestExpandFilePaths ---
+2025-07-07 14:52:33,125 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpq67zpwoq
+2025-07-07 14:52:33,126 - INFO - fsh24_test_suite - 
+
+--- Setting up TestExpandFilePaths ---
+2025-07-07 14:52:33,127 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkkfkj9v0
+2025-07-07 14:52:33,128 - INFO - fsh24_test_suite -   Running test_single_file
+2025-07-07 14:52:33,129 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkkfkj9v0\file1.txt (10 bytes, type: random)
+2025-07-07 14:52:33,136 - INFO - fsh24_test_suite -   Created and hashed: file1.txt (FSH24: 9EA76D6919EC8A58C528EBE298DF97F591D72688ABF26281, Chunks: 4)
+2025-07-07 14:52:33,137 - INFO - fsh24_test_suite - 
+--- Tearing down TestExpandFilePaths ---
+2025-07-07 14:52:33,143 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkkfkj9v0
+2025-07-07 14:52:33,144 - INFO - fsh24_test_suite - 
+
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:52:33,145 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpawzn0ezf
+2025-07-07 14:52:33,146 - INFO - fsh24_test_suite -   Running test_empty_file_hash
+2025-07-07 14:52:33,147 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpawzn0ezf\empty.bin (0 bytes, type: random)
+2025-07-07 14:52:33,152 - INFO - fsh24_test_suite -   Created and hashed: empty.bin (FSH24: AA407E6B93C58EA41D410393085691E21412EB43276BCDF9, Chunks: 4)
+2025-07-07 14:52:33,156 - INFO - fsh24_test_suite - 
+--- Tearing down TestFastSampleHash ---
+2025-07-07 14:52:33,165 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpawzn0ezf
+2025-07-07 14:52:33,165 - INFO - fsh24_test_suite - 
+
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:52:33,166 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp_2fex9ub
+2025-07-07 14:52:33,167 - INFO - fsh24_test_suite -   Running test_file_slightly_larger_than_4MB
+2025-07-07 14:52:33,167 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp_2fex9ub\slightly_larger.bin (4194314 bytes, type: random)
+2025-07-07 14:52:34,052 - INFO - fsh24_test_suite -   Created and hashed: slightly_larger.bin (FSH24: 974E3D2C98EA6E88571E799DD293AB7425EC6DB4640E38DF, Chunks: 4)
+2025-07-07 14:52:34,068 - INFO - fsh24_test_suite - 
+--- Tearing down TestFastSampleHash ---
+2025-07-07 14:52:34,079 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp_2fex9ub
+2025-07-07 14:52:34,080 - INFO - fsh24_test_suite - 
+
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:52:34,081 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp28p5b734
+2025-07-07 14:52:34,082 - INFO - fsh24_test_suite -   Running test_hash_consistency_same_file
+2025-07-07 14:52:34,084 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp28p5b734\test1.bin (10485760 bytes, type: random)
+2025-07-07 14:52:36,239 - INFO - fsh24_test_suite -   Created and hashed: test1.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 14:52:36,288 - INFO - fsh24_test_suite - 
+--- Tearing down TestFastSampleHash ---
+2025-07-07 14:52:36,318 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp28p5b734
+2025-07-07 14:52:36,319 - INFO - fsh24_test_suite - 
+
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:52:36,320 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpsfnmmwb7
+2025-07-07 14:52:36,321 - INFO - fsh24_test_suite -   Running test_hash_differs_for_append
+2025-07-07 14:52:36,321 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpsfnmmwb7\test_append.bin (10485760 bytes, type: random)
+2025-07-07 14:52:38,560 - INFO - fsh24_test_suite -   Created and hashed: test_append.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 14:52:38,583 - INFO - fsh24_test_suite -   Corrupting a copy of 'test_append.bin' to 'corrupted_test_append.bin' with type 'append' {'append_bytes': 100}
+2025-07-07 14:52:39,332 - INFO - fsh24_test_suite - 
+--- Tearing down TestFastSampleHash ---
+2025-07-07 14:52:39,365 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpsfnmmwb7
+2025-07-07 14:52:39,366 - INFO - fsh24_test_suite - 
+
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:52:39,369 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpy1kijaa0
+2025-07-07 14:52:39,370 - INFO - fsh24_test_suite -   Running test_hash_differs_for_bit_flip
+2025-07-07 14:52:39,371 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpy1kijaa0\test_corrupt.bin (20971520 bytes, type: random)
+2025-07-07 14:52:44,491 - INFO - fsh24_test_suite -   Created and hashed: test_corrupt.bin (FSH24: 818FC4A6599EAB603A2B679E42EDD1C51EECCFF4B1DB7229, Chunks: 4)
+2025-07-07 14:52:44,531 - INFO - fsh24_test_suite -   Corrupting a copy of 'test_corrupt.bin' to 'corrupted_test_corrupt.bin' with type 'bit_flip' {'offset': 10485860, 'bit_index': 0}
+2025-07-07 14:52:45,593 - INFO - fsh24_test_suite - 
+--- Tearing down TestFastSampleHash ---
+2025-07-07 14:52:45,616 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpy1kijaa0
+2025-07-07 14:52:45,617 - INFO - fsh24_test_suite - 
+
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:52:45,619 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpbdx7afuv
+2025-07-07 14:52:45,620 - INFO - fsh24_test_suite -   Running test_hash_differs_for_byte_change
+2025-07-07 14:52:45,621 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpbdx7afuv\test_corrupt_byte.bin (20971520 bytes, type: random)
+2025-07-07 14:52:50,195 - INFO - fsh24_test_suite -   Created and hashed: test_corrupt_byte.bin (FSH24: 818FC4A6599EAB603A2B679E42EDD1C51EECCFF4B1DB7229, Chunks: 4)
+2025-07-07 14:52:50,235 - INFO - fsh24_test_suite -   Corrupting a copy of 'test_corrupt_byte.bin' to 'corrupted_test_corrupt_byte.bin' with type 'byte_change' {'offset': 5242880, 'new_byte': 170}
+2025-07-07 14:52:51,383 - INFO - fsh24_test_suite - 
+--- Tearing down TestFastSampleHash ---
+2025-07-07 14:52:51,417 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpbdx7afuv
+2025-07-07 14:52:51,418 - INFO - fsh24_test_suite - 
+
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:52:51,421 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp6zkxg1bi
+2025-07-07 14:52:51,421 - INFO - fsh24_test_suite -   Running test_hash_differs_for_different_content
+2025-07-07 14:52:51,422 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp6zkxg1bi\test_diff1.bin (1048576 bytes, type: random)
+2025-07-07 14:52:51,632 - INFO - fsh24_test_suite -   Created and hashed: test_diff1.bin (FSH24: 471BCD1C34261B46CB3A02813E46D11BFA04EFC107907318, Chunks: 4)
+2025-07-07 14:52:51,633 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp6zkxg1bi\test_diff2.bin (1048576 bytes, type: sequential)
+2025-07-07 14:52:51,772 - INFO - fsh24_test_suite -   Created and hashed: test_diff2.bin (FSH24: D2BA9A12E5B3608ABE720224E18B4A94D0EFABBF38A1E5B7, Chunks: 4)
+2025-07-07 14:52:51,783 - INFO - fsh24_test_suite - 
+--- Tearing down TestFastSampleHash ---
+2025-07-07 14:52:51,794 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp6zkxg1bi
+2025-07-07 14:52:51,795 - INFO - fsh24_test_suite - 
+
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:52:51,796 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpai4qoz72
+2025-07-07 14:52:51,797 - INFO - fsh24_test_suite -   Running test_hash_differs_for_truncate
+2025-07-07 14:52:51,797 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpai4qoz72\test_truncate.bin (10485760 bytes, type: random)
+2025-07-07 14:52:54,063 - INFO - fsh24_test_suite -   Created and hashed: test_truncate.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 14:52:54,086 - INFO - fsh24_test_suite -   Corrupting a copy of 'test_truncate.bin' to 'corrupted_test_truncate.bin' with type 'truncate' {'new_size': 5242880}
+2025-07-07 14:52:54,411 - INFO - fsh24_test_suite - 
+--- Tearing down TestFastSampleHash ---
+2025-07-07 14:52:54,429 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpai4qoz72
+2025-07-07 14:52:54,430 - INFO - fsh24_test_suite - 
+
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:52:54,432 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpepd_6ava
+2025-07-07 14:52:54,433 - INFO - fsh24_test_suite -   Running test_middle_chunk_distribution
+2025-07-07 14:52:54,433 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpepd_6ava\large_file_middle_chunks.bin (1717986918.4 bytes, type: random)
+2025-07-07 14:59:06,131 - INFO - fsh24_test_suite - 
+--- Tearing down TestFastSampleHash ---
+2025-07-07 14:59:06,276 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpepd_6ava
+2025-07-07 14:59:06,277 - INFO - fsh24_test_suite - 
+
+--- Setting up TestFastSampleHash ---
+2025-07-07 14:59:06,278 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp62smdt2_
+2025-07-07 14:59:06,278 - INFO - fsh24_test_suite -   Running test_small_file_hash_structure
+2025-07-07 14:59:06,279 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp62smdt2_\small_chunk.bin (1048576 bytes, type: random)
+2025-07-07 14:59:06,496 - INFO - fsh24_test_suite -   Created and hashed: small_chunk.bin (FSH24: 471BCD1C34261B46CB3A02813E46D11BFA04EFC107907318, Chunks: 4)
+2025-07-07 14:59:06,505 - INFO - fsh24_test_suite - 
+--- Tearing down TestFastSampleHash ---
+2025-07-07 14:59:06,512 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp62smdt2_
+2025-07-07 14:59:06,513 - INFO - fsh24_test_suite - 
+
+--- Setting up TestGenerateHashFileMultiple ---
+2025-07-07 14:59:06,518 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpz72oa8u9
+2025-07-07 14:59:06,520 - INFO - fsh24_test_suite -   Running test_generate_hash_file_with_missing_file_in_list
+2025-07-07 14:59:06,523 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpz72oa8u9\exist.bin (10240 bytes, type: random)
+2025-07-07 14:59:06,547 - INFO - fsh24_test_suite -   Created and hashed: exist.bin (FSH24: 9830039760C68E1C588A6668EE846F1D30E503477B95F9E3, Chunks: 4)
+2025-07-07 14:59:06,558 - INFO - fsh24_test_suite - 
+--- Tearing down TestGenerateHashFileMultiple ---
+2025-07-07 14:59:06,566 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpz72oa8u9
+2025-07-07 14:59:06,567 - INFO - fsh24_test_suite - 
+
+--- Setting up TestGenerateHashFileMultiple ---
+2025-07-07 14:59:06,568 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp79l997gd
+2025-07-07 14:59:06,570 - INFO - fsh24_test_suite -   Running test_generate_multiple_files_hash_file
+2025-07-07 14:59:06,571 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp79l997gd\hash_multi1.bin (10240 bytes, type: random)
+2025-07-07 14:59:06,582 - INFO - fsh24_test_suite -   Created and hashed: hash_multi1.bin (FSH24: 9830039760C68E1C588A6668EE846F1D30E503477B95F9E3, Chunks: 4)
+2025-07-07 14:59:06,583 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp79l997gd\hash_multi2.bin (20971520 bytes, type: random)
+2025-07-07 14:59:11,235 - INFO - fsh24_test_suite -   Created and hashed: hash_multi2.bin (FSH24: D2E866CC1438F48C673F264AE8CB4A1B443344FDE99C3974, Chunks: 4)
+2025-07-07 14:59:11,237 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp79l997gd\hash_multi3.bin (524288000 bytes, type: random)
+2025-07-07 15:01:06,136 - INFO - fsh24_test_suite -   Created and hashed: hash_multi3.bin (FSH24: 82D2E8B7CF07442F589AB309015CF4875963CAC17D053FB3, Chunks: 4)
+2025-07-07 15:01:06,398 - INFO - fsh24_test_suite - 
+--- Tearing down TestGenerateHashFileMultiple ---
+2025-07-07 15:01:06,466 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp79l997gd
+2025-07-07 15:01:06,468 - INFO - fsh24_test_suite - 
+
+--- Setting up TestGenerateHashFileMultiple ---
+2025-07-07 15:01:06,470 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpgjppqj0g
+2025-07-07 15:01:06,470 - INFO - fsh24_test_suite -   Running test_generate_single_file_hash_file
+2025-07-07 15:01:06,471 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpgjppqj0g\hash_single.bin (1048576 bytes, type: random)
+2025-07-07 15:01:06,719 - INFO - fsh24_test_suite -   Created and hashed: hash_single.bin (FSH24: 471BCD1C34261B46CB3A02813E46D11BFA04EFC107907318, Chunks: 4)
+2025-07-07 15:01:06,735 - INFO - fsh24_test_suite - 
+--- Tearing down TestGenerateHashFileMultiple ---
+2025-07-07 15:01:06,744 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpgjppqj0g
+2025-07-07 15:01:06,745 - INFO - fsh24_test_suite - 
+
+--- Setting up TestMainCLI ---
+2025-07-07 15:01:06,746 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpja426jhr
+2025-07-07 15:01:06,747 - INFO - fsh24_test_suite -   Running test_main_hash_directory_recursive_json
+2025-07-07 15:01:06,748 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpja426jhr\cli_dir_json
+2025-07-07 15:01:06,748 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpja426jhr\cli_dir_json\f1.txt (1024 bytes, type: random)
+2025-07-07 15:01:06,755 - INFO - fsh24_test_suite -   Created and hashed: f1.txt (FSH24: B150C959BC4B82BCA524422546B9A3FEFFAB7F6624BF9844, Chunks: 4)
+2025-07-07 15:01:06,756 - INFO - fsh24_test_suite -   Created directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpja426jhr\cli_dir_json\sub
+2025-07-07 15:01:06,757 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpja426jhr\cli_dir_json\sub\f2.txt (5242880 bytes, type: random)
+2025-07-07 15:01:07,873 - INFO - fsh24_test_suite -   Created and hashed: f2.txt (FSH24: E0C9C8A2B07E3FCF6F3AA07524AE88998BC77D08A8076EB6, Chunks: 4)
+2025-07-07 15:01:07,880 - INFO - fsh24_test_suite - 
+--- Tearing down TestMainCLI ---
+2025-07-07 15:01:07,897 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpja426jhr
+2025-07-07 15:01:07,897 - INFO - fsh24_test_suite - 
+
+--- Setting up TestMainCLI ---
+2025-07-07 15:01:07,899 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpoc5p88c8
+2025-07-07 15:01:07,900 - INFO - fsh24_test_suite -   Running test_main_hash_multiple_files_verbose
+2025-07-07 15:01:07,900 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpoc5p88c8\cli_hash_multi1.bin (10485760 bytes, type: random)
+2025-07-07 15:01:10,227 - INFO - fsh24_test_suite -   Created and hashed: cli_hash_multi1.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 15:01:10,229 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpoc5p88c8\cli_hash_multi2.bin (104857601 bytes, type: random)
+2025-07-07 15:01:32,550 - INFO - fsh24_test_suite -   Created and hashed: cli_hash_multi2.bin (FSH24: 8E257335C4260D5B515A78E2DCF291BA685F0636FD120D85, Chunks: 4)
+2025-07-07 15:01:32,563 - INFO - fsh24_test_suite - 
+--- Tearing down TestMainCLI ---
+2025-07-07 15:01:32,597 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpoc5p88c8
+2025-07-07 15:01:32,598 - INFO - fsh24_test_suite - 
+
+--- Setting up TestMainCLI ---
+2025-07-07 15:01:32,599 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpmsna35gc
+2025-07-07 15:01:32,600 - INFO - fsh24_test_suite -   Running test_main_hash_single_file
+2025-07-07 15:01:32,601 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpmsna35gc\cli_hash_single.bin (1048576 bytes, type: random)
+2025-07-07 15:01:32,795 - INFO - fsh24_test_suite -   Created and hashed: cli_hash_single.bin (FSH24: 471BCD1C34261B46CB3A02813E46D11BFA04EFC107907318, Chunks: 4)
+2025-07-07 15:01:32,805 - INFO - fsh24_test_suite - 
+--- Tearing down TestMainCLI ---
+2025-07-07 15:01:32,811 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpmsna35gc
+2025-07-07 15:01:32,822 - INFO - fsh24_test_suite - 
+
+--- Setting up TestMainCLI ---
+2025-07-07 15:01:32,825 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpls151b2v
+2025-07-07 15:01:32,826 - INFO - fsh24_test_suite -   Running test_main_hash_single_non_existent_file_exit
+2025-07-07 15:01:32,836 - INFO - fsh24_test_suite - 
+--- Tearing down TestMainCLI ---
+2025-07-07 15:01:32,841 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpls151b2v
+2025-07-07 15:01:32,842 - INFO - fsh24_test_suite - 
+
+--- Setting up TestMainCLI ---
+2025-07-07 15:01:32,844 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp11_ycd1x
+2025-07-07 15:01:32,844 - INFO - fsh24_test_suite -   Running test_main_no_files_to_process
+2025-07-07 15:01:32,856 - INFO - fsh24_test_suite - 
+--- Tearing down TestMainCLI ---
+2025-07-07 15:01:32,862 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp11_ycd1x
+2025-07-07 15:01:32,863 - INFO - fsh24_test_suite - 
+
+--- Setting up TestMainCLI ---
+2025-07-07 15:01:32,865 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp06xxw4ov
+2025-07-07 15:01:32,866 - INFO - fsh24_test_suite -   Running test_main_verify_hash_file_failure
+2025-07-07 15:01:32,866 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp06xxw4ov\cli_verify_fail.bin (5242880 bytes, type: random)
+2025-07-07 15:01:34,062 - INFO - fsh24_test_suite -   Created and hashed: cli_verify_fail.bin (FSH24: 64F9F4F77756FAA5901E294F4925ED516C089871F6D4E60B, Chunks: 4)
+2025-07-07 15:01:34,084 - INFO - fsh24_test_suite -   Corrupting a copy of 'cli_verify_fail.bin' to 'corrupted_cli_verify_fail.bin' with type 'bit_flip' {'offset': 100}
+2025-07-07 15:01:34,361 - INFO - fsh24_test_suite - 
+--- Tearing down TestMainCLI ---
+2025-07-07 15:01:34,371 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp06xxw4ov
+2025-07-07 15:01:34,372 - INFO - fsh24_test_suite - 
+
+--- Setting up TestMainCLI ---
+2025-07-07 15:01:34,374 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpvtewrxu1
+2025-07-07 15:01:34,374 - INFO - fsh24_test_suite -   Running test_main_verify_hash_file_success
+2025-07-07 15:01:34,375 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpvtewrxu1\cli_verify_success.bin (10485760 bytes, type: random)
+2025-07-07 15:01:36,745 - INFO - fsh24_test_suite -   Created and hashed: cli_verify_success.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 15:01:36,789 - INFO - fsh24_test_suite - 
+--- Tearing down TestMainCLI ---
+2025-07-07 15:01:36,804 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpvtewrxu1
+2025-07-07 15:01:36,804 - INFO - fsh24_test_suite - 
+
+--- Setting up TestProcessSingleFile ---
+2025-07-07 15:01:36,806 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpm4wq87ge
+2025-07-07 15:01:36,806 - INFO - fsh24_test_suite -   Running test_basic_processing_non_verbose
+2025-07-07 15:01:36,807 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpm4wq87ge\test_file.bin (1048576 bytes, type: random)
+2025-07-07 15:01:37,033 - INFO - fsh24_test_suite -   Created and hashed: test_file.bin (FSH24: 471BCD1C34261B46CB3A02813E46D11BFA04EFC107907318, Chunks: 4)
+2025-07-07 15:01:37,040 - INFO - fsh24_test_suite - 
+--- Tearing down TestProcessSingleFile ---
+2025-07-07 15:01:37,051 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpm4wq87ge
+2025-07-07 15:01:37,052 - INFO - fsh24_test_suite - 
+
+--- Setting up TestProcessSingleFile ---
+2025-07-07 15:01:37,053 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpklt7vvmf
+2025-07-07 15:01:37,053 - INFO - fsh24_test_suite -   Running test_basic_processing_verbose
+2025-07-07 15:01:37,054 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpklt7vvmf\test_file_verbose.bin (10485760 bytes, type: random)
+2025-07-07 15:01:39,428 - INFO - fsh24_test_suite -   Created and hashed: test_file_verbose.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 15:01:39,457 - INFO - fsh24_test_suite - 
+--- Tearing down TestProcessSingleFile ---
+2025-07-07 15:01:39,471 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpklt7vvmf
+2025-07-07 15:01:39,472 - INFO - fsh24_test_suite - 
+
+--- Setting up TestProcessSingleFile ---
+2025-07-07 15:01:39,473 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp15drghv8
+2025-07-07 15:01:39,474 - INFO - fsh24_test_suite -   Running test_processing_file_not_found
+2025-07-07 15:01:39,475 - INFO - fsh24_test_suite - 
+--- Tearing down TestProcessSingleFile ---
+2025-07-07 15:01:39,479 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp15drghv8
+2025-07-07 15:01:39,480 - INFO - fsh24_test_suite - 
+
+--- Setting up TestProcessSingleFile ---
+2025-07-07 15:01:39,482 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpl5l69alv
+2025-07-07 15:01:39,482 - INFO - fsh24_test_suite -   Running test_processing_json_output
+2025-07-07 15:01:39,483 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpl5l69alv\test_file_json.bin (20971520 bytes, type: random)
+2025-07-07 15:01:44,051 - INFO - fsh24_test_suite -   Created and hashed: test_file_json.bin (FSH24: 818FC4A6599EAB603A2B679E42EDD1C51EECCFF4B1DB7229, Chunks: 4)
+2025-07-07 15:01:44,096 - INFO - fsh24_test_suite - 
+--- Tearing down TestProcessSingleFile ---
+2025-07-07 15:01:44,114 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpl5l69alv
+2025-07-07 15:01:44,115 - INFO - fsh24_test_suite - 
+
+--- Setting up TestVerifyHashFile ---
+2025-07-07 15:01:44,116 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp6nyc98mf
+2025-07-07 15:01:44,116 - INFO - fsh24_test_suite -   Running test_verify_invalid_hash_file_header
+2025-07-07 15:01:44,120 - INFO - fsh24_test_suite - 
+--- Tearing down TestVerifyHashFile ---
+2025-07-07 15:01:44,127 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp6nyc98mf
+2025-07-07 15:01:44,128 - INFO - fsh24_test_suite - 
+
+--- Setting up TestVerifyHashFile ---
+2025-07-07 15:01:44,129 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp6f_jo7ys
+2025-07-07 15:01:44,130 - INFO - fsh24_test_suite -   Running test_verify_invalid_hash_file_line_format
+2025-07-07 15:01:44,130 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp6f_jo7ys\valid_file.bin (100 bytes, type: random)
+2025-07-07 15:01:44,137 - INFO - fsh24_test_suite -   Created and hashed: valid_file.bin (FSH24: 5603CAC66C80F4259DF3BCA60020214F437DDF1120EDC1DD, Chunks: 4)
+2025-07-07 15:01:44,146 - INFO - fsh24_test_suite - 
+--- Tearing down TestVerifyHashFile ---
+2025-07-07 15:01:44,155 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp6f_jo7ys
+2025-07-07 15:01:44,156 - INFO - fsh24_test_suite - 
+
+--- Setting up TestVerifyHashFile ---
+2025-07-07 15:01:44,158 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpof2xai39
+2025-07-07 15:01:44,158 - INFO - fsh24_test_suite -   Running test_verify_invalid_numeric_format_in_line
+2025-07-07 15:01:44,158 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpof2xai39\valid_file_num_err.bin (100 bytes, type: random)
+2025-07-07 15:01:44,166 - INFO - fsh24_test_suite -   Created and hashed: valid_file_num_err.bin (FSH24: 5603CAC66C80F4259DF3BCA60020214F437DDF1120EDC1DD, Chunks: 4)
+2025-07-07 15:01:44,170 - INFO - fsh24_test_suite - 
+--- Tearing down TestVerifyHashFile ---
+2025-07-07 15:01:44,180 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpof2xai39
+2025-07-07 15:01:44,181 - INFO - fsh24_test_suite - 
+
+--- Setting up TestVerifyHashFile ---
+2025-07-07 15:01:44,182 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpmu3isdss
+2025-07-07 15:01:44,182 - INFO - fsh24_test_suite -   Running test_verify_json_output
+2025-07-07 15:01:44,183 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpmu3isdss\verify_json.bin (1048576 bytes, type: random)
+2025-07-07 15:01:44,440 - INFO - fsh24_test_suite -   Created and hashed: verify_json.bin (FSH24: 471BCD1C34261B46CB3A02813E46D11BFA04EFC107907318, Chunks: 4)
+2025-07-07 15:01:44,450 - INFO - fsh24_test_suite -   Corrupting a copy of 'verify_json.bin' to 'corrupted_verify_json.bin' with type 'bit_flip' {'offset': 100}
+2025-07-07 15:01:44,532 - INFO - fsh24_test_suite - 
+--- Tearing down TestVerifyHashFile ---
+2025-07-07 15:01:44,550 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpmu3isdss
+2025-07-07 15:01:44,551 - INFO - fsh24_test_suite - 
+
+--- Setting up TestVerifyHashFile ---
+2025-07-07 15:01:44,553 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpffwh2gdx
+2025-07-07 15:01:44,553 - INFO - fsh24_test_suite -   Running test_verify_missing_file
+2025-07-07 15:01:44,553 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpffwh2gdx\verify_missing.bin (1024 bytes, type: random)
+2025-07-07 15:01:44,562 - INFO - fsh24_test_suite -   Created and hashed: verify_missing.bin (FSH24: B150C959BC4B82BCA524422546B9A3FEFFAB7F6624BF9844, Chunks: 4)
+2025-07-07 15:01:44,569 - INFO - fsh24_test_suite -   Deleted file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpffwh2gdx\verify_missing.bin
+2025-07-07 15:01:44,571 - INFO - fsh24_test_suite - 
+--- Tearing down TestVerifyHashFile ---
+2025-07-07 15:01:44,578 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpffwh2gdx
+2025-07-07 15:01:44,579 - INFO - fsh24_test_suite - 
+
+--- Setting up TestVerifyHashFile ---
+2025-07-07 15:01:44,580 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkaffbd4n
+2025-07-07 15:01:44,581 - INFO - fsh24_test_suite -   Running test_verify_multiple_files_mixed_results
+2025-07-07 15:01:44,582 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkaffbd4n\vm_file1.bin (1048576 bytes, type: random)
+2025-07-07 15:01:44,826 - INFO - fsh24_test_suite -   Created and hashed: vm_file1.bin (FSH24: 471BCD1C34261B46CB3A02813E46D11BFA04EFC107907318, Chunks: 4)
+2025-07-07 15:01:44,827 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkaffbd4n\vm_file2.bin (5242880 bytes, type: random)
+2025-07-07 15:01:46,012 - INFO - fsh24_test_suite -   Created and hashed: vm_file2.bin (FSH24: 140089444C788C532A8F7FB7EDD75A5523765B24A7EED77F, Chunks: 4)
+2025-07-07 15:01:46,014 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkaffbd4n\vm_file3.bin (10485760 bytes, type: random)
+2025-07-07 15:01:48,369 - INFO - fsh24_test_suite -   Created and hashed: vm_file3.bin (FSH24: 5A0491A0A44387DA17244F48FA1CB91733B23AC72A4BBD95, Chunks: 4)
+2025-07-07 15:01:48,371 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkaffbd4n\vm_file4.bin (15728640 bytes, type: random)
+2025-07-07 15:01:51,918 - INFO - fsh24_test_suite -   Created and hashed: vm_file4.bin (FSH24: BDAE4A9C5D5FCABC0A4B98775CC8C99EC1E80A11AF201354, Chunks: 4)
+2025-07-07 15:01:52,020 - INFO - fsh24_test_suite -   Corrupting a copy of 'vm_file2.bin' to 'corrupted_vm_file2.bin' with type 'bit_flip' {'offset': 100}
+2025-07-07 15:01:52,257 - INFO - fsh24_test_suite -   Corrupting a copy of 'vm_file3.bin' to 'corrupted_vm_file3.bin' with type 'truncate' {'new_size': 5242880}
+2025-07-07 15:01:52,537 - INFO - fsh24_test_suite -   Deleted file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkaffbd4n\vm_file4.bin
+2025-07-07 15:01:52,618 - INFO - fsh24_test_suite - 
+--- Tearing down TestVerifyHashFile ---
+2025-07-07 15:01:52,640 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpkaffbd4n
+2025-07-07 15:01:52,642 - INFO - fsh24_test_suite - 
+
+--- Setting up TestVerifyHashFile ---
+2025-07-07 15:01:52,643 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpaf4fpn60
+2025-07-07 15:01:52,644 - INFO - fsh24_test_suite -   Running test_verify_single_file_hash_mismatch
+2025-07-07 15:01:52,644 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpaf4fpn60\verify_hash_mismatch.bin (5242880 bytes, type: random)
+2025-07-07 15:01:53,884 - INFO - fsh24_test_suite -   Created and hashed: verify_hash_mismatch.bin (FSH24: 64F9F4F77756FAA5901E294F4925ED516C089871F6D4E60B, Chunks: 4)
+2025-07-07 15:01:53,907 - INFO - fsh24_test_suite -   Corrupting a copy of 'verify_hash_mismatch.bin' to 'corrupted_verify_hash_mismatch.bin' with type 'bit_flip' {'offset': 1000}
+2025-07-07 15:01:54,173 - INFO - fsh24_test_suite - 
+--- Tearing down TestVerifyHashFile ---
+2025-07-07 15:01:54,185 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpaf4fpn60
+2025-07-07 15:01:54,185 - INFO - fsh24_test_suite - 
+
+--- Setting up TestVerifyHashFile ---
+2025-07-07 15:01:54,186 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp2prjiwi_
+2025-07-07 15:01:54,187 - INFO - fsh24_test_suite -   Running test_verify_single_file_size_mismatch
+2025-07-07 15:01:54,187 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp2prjiwi_\verify_size_mismatch.bin (5242880 bytes, type: random)
+2025-07-07 15:01:55,340 - INFO - fsh24_test_suite -   Created and hashed: verify_size_mismatch.bin (FSH24: 64F9F4F77756FAA5901E294F4925ED516C089871F6D4E60B, Chunks: 4)
+2025-07-07 15:01:55,368 - INFO - fsh24_test_suite -   Corrupting a copy of 'verify_size_mismatch.bin' to 'corrupted_verify_size_mismatch.bin' with type 'truncate' {'new_size': 2097152}
+2025-07-07 15:01:55,499 - INFO - fsh24_test_suite - 
+--- Tearing down TestVerifyHashFile ---
+2025-07-07 15:01:55,509 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmp2prjiwi_
+2025-07-07 15:01:55,510 - INFO - fsh24_test_suite - 
+
+--- Setting up TestVerifyHashFile ---
+2025-07-07 15:01:55,511 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplyye2al1
+2025-07-07 15:01:55,512 - INFO - fsh24_test_suite -   Running test_verify_single_file_success
+2025-07-07 15:01:55,512 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplyye2al1\verify_success.bin (10485760 bytes, type: random)
+2025-07-07 15:01:57,886 - INFO - fsh24_test_suite -   Created and hashed: verify_success.bin (FSH24: 5C639B328F2F1C1EF85768C0154833B7358271ECC3257ACC, Chunks: 4)
+2025-07-07 15:01:57,948 - INFO - fsh24_test_suite - 
+--- Tearing down TestVerifyHashFile ---
+2025-07-07 15:01:57,964 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmplyye2al1
+2025-07-07 15:01:57,965 - INFO - fsh24_test_suite - 
+
+--- Setting up TestVerifyHashFile ---
+2025-07-07 15:01:57,967 - INFO - fsh24_test_suite - Created temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpcl7byj6k
+2025-07-07 15:01:57,967 - INFO - fsh24_test_suite -   Running test_verify_single_file_success_verbose
+2025-07-07 15:01:57,969 - INFO - fsh24_test_suite -   Creating file: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpcl7byj6k\verify_success_v.bin (20971520 bytes, type: random)
+2025-07-07 15:02:02,431 - INFO - fsh24_test_suite -   Created and hashed: verify_success_v.bin (FSH24: 818FC4A6599EAB603A2B679E42EDD1C51EECCFF4B1DB7229, Chunks: 4)
+2025-07-07 15:02:02,524 - INFO - fsh24_test_suite - 
+--- Tearing down TestVerifyHashFile ---
+2025-07-07 15:02:02,542 - INFO - fsh24_test_suite - Removed temporary directory: Z:\ISO And Roms\Sony\PS4\Games\MediEvil (HD) [CUSA11227]\tmpcl7byj6k

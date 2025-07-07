@@ -1,0 +1,61 @@
+https://github.com/cr-marcstevens/sha1collisiondetection
+This is not a very good test for our use case as we way over sample becuase the files are small.
+
+  File: shattered-1.pdf
+ SHA-1: 38762cf7f55934b34d179ae6a4c80cadccbb7f0a
+ 
+  File: shattered-2.pdf
+ SHA-1: 38762cf7f55934b34d179ae6a4c80cadccbb7f0a
+
+  File: sha-mbles-1.bin
+ SHA-1: 8ac60ba76f1999a1ab70223f225aefdc78d4ddc0
+
+  File: sha-mbles-2.bin
+ SHA-1: 8ac60ba76f1999a1ab70223f225aefdc78d4ddc0
+ 
+ 
+python fsh24.py shattered-1.pdf shattered-2.pdf sha-mbles-1.bin sha-mbles-2.bin
+Processing: shattered-1.pdf
+FSH24: 54EE5EB06FAFB60E0922F6348F2E958F2B484A28F20C2840
+
+Processing: shattered-2.pdf
+FSH24: 4E2724A775A33F35273584A99EF594E67923553AE84E36C2
+
+Processing: sha-mbles-1.bin
+FSH24: BC3F8D6569AA56CD78CEE4C3A57CED99FCF9FD16F1C51B4E
+
+Processing: sha-mbles-2.bin
+FSH24: 0F1479743FF9B34B2493438D2E7CAF99D7628C01CC287B5C
+
+Processed 4 files in 0.051s
+Total file size: 846,150 bytes (0.00 GB)
+Total hashed size: 67,108,864 bytes (0.06 GB)
+Total hash percentage: 7931.0836%
+
+54EE5EB06FAFB60E0922F6348F2E958F2B484A28F20C2840|4|422435|shattered-1.pdf
+4E2724A775A33F35273584A99EF594E67923553AE84E36C2|4|422435|shattered-2.pdf
+BC3F8D6569AA56CD78CEE4C3A57CED99FCF9FD16F1C51B4E|4|640|sha-mbles-1.bin
+0F1479743FF9B34B2493438D2E7CAF99D7628C01CC287B5C|4|640|sha-mbles-2.bin
+
+fsh24 has correctly identified that these 4 files are different, but again this is over sampling by 8000%
+and this attack is only vulnerable to sha1.
+
+  File: shattered-2.pdf
+CRC-32: b3fbab1c
+   MD4: 4881d13b4265c952a9ed032ea4a1a043
+   MD5: 5bd9d8cabc46041579a311230539b8d1
+
+  File: sha-mbles-1.bin
+CRC-32: 072e2b0e
+   MD4: 6d4b1082eea8f7610ee925dace5ec723
+   MD5: 2a8c87d415a369eeb396d17df6241c57
+
+  File: sha-mbles-2.bin
+CRC-32: 92433266
+   MD4: be391f43b4bc66a9f1158344cacbf34f
+   MD5: d27794ba8bc1f19e97ec82fea19a231e
+
+  File: shattered-1.pdf
+CRC-32: 348150fb
+   MD4: 38373b377cf16c032d08cef0855cb820
+   MD5: ee4aa52b139d925f8d8884402b0a750c
