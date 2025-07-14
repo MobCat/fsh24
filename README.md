@@ -1,6 +1,7 @@
 # FSH24
 FSH24 - Fast Sample based Hash 24-byte.<br>
 A super fast integrity hash using strategic 4MB sampling.
+It doesn't have to be good, just fast.
 
 # The goal of FSH24
 I aim to provide a system that allows for rapid checking and testing of large files from the internet.<br>
@@ -43,6 +44,14 @@ the block could be. This guess could be improved, but as we are running into cac
 FSH24 also has a "fast" or failsafe mode where, if the file size doesn't even match the expected file size listed in the hash
 We can just skip the hashing and tell the user the file size is wrong. Normally just this alone is enough to test a bad download
 but later we might add a command arg flag to bypass the skip on bad file size check.
+
+# How to "install"
+Again, not good, just fast.<br>
+In this repo there are 2 bat files. `install.bat` and `uninstall.bat`<br>
+To install FSH24 to your system download the `install.bat` and `fsh24.exe` files and place them in the same folder.<br>
+Then run the install script as admin.<br>
+This will copy FSH24 to your system and setup some context menus for right clicking on files.<br>
+You may have to log in and out for explore.exe to recognize the changes.
 
 # Hash brakedown
 Below is a sample of a fsh24 file.
