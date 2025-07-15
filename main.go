@@ -10,7 +10,6 @@
 package main
 
 import (
-	"golang.org/x/crypto/blake2b"
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
@@ -25,6 +24,7 @@ import (
 	"time"
 
 	"github.com/spf13/pflag" // More powerful flag parsing than standard library
+	"golang.org/x/crypto/blake2b"
 )
 
 const (
@@ -33,48 +33,48 @@ const (
 
 // Result struct for a single file's hash information
 type FileHashResult struct {
-	Filename       string  `json:"filename"`
-	Filepath       string  `json:"filepath"`
-	FileSize       int64   `json:"file_size"`
-	FSH24          string  `json:"fsh24"`
-	Chunks         int     `json:"chunks"`
+	Filename        string  `json:"filename"`
+	Filepath        string  `json:"filepath"`
+	FileSize        int64   `json:"file_size"`
+	FSH24           string  `json:"fsh24"`
+	Chunks          int     `json:"chunks"`
 	CoveragePercent float64 `json:"coverage_percent"`
-	ProcessingTime float64 `json:"processing_time"`
+	ProcessingTime  float64 `json:"processing_time"`
 }
 
 // VerificationResult struct for a single file's verification outcome
 type FileVerificationResult struct {
-	Filepath      string `json:"filepath"`
-	Filename      string `json:"filename"`
-	ExpectedHash  string `json:"expected_hash"`
-	ExpectedSize  int64  `json:"expected_size"`
-	ActualSize    int64  `json:"actual_size,omitempty"`
-	ActualHash    string `json:"actual_hash,omitempty"`
-	Status        string `json:"status"`
+	Filepath       string  `json:"filepath"`
+	Filename       string  `json:"filename"`
+	ExpectedHash   string  `json:"expected_hash"`
+	ExpectedSize   int64   `json:"expected_size"`
+	ActualSize     int64   `json:"actual_size,omitempty"`
+	ActualHash     string  `json:"actual_hash,omitempty"`
+	Status         string  `json:"status"`
 	ProcessingTime float64 `json:"processing_time,omitempty"`
-	HashedSize    int64  `json:"hashed_size,omitempty"`
+	HashedSize     int64   `json:"hashed_size,omitempty"`
 }
 
 // VerificationSummary struct for overall verification statistics
 type VerificationSummary struct {
-	Verified            int     `json:"verified"`
-	Failed              int     `json:"failed"`
-	Total               int     `json:"total"`
-	Success             bool    `json:"success"`
-	TotalTime           float64 `json:"total_time"`
-	AverageTimePerFile  float64 `json:"average_time_per_file"`
-	TotalSize           int64   `json:"total_size"`
-	TotalHashedSize     int64   `json:"total_hashed_size"`
+	Verified              int     `json:"verified"`
+	Failed                int     `json:"failed"`
+	Total                 int     `json:"total"`
+	Success               bool    `json:"success"`
+	TotalTime             float64 `json:"total_time"`
+	AverageTimePerFile    float64 `json:"average_time_per_file"`
+	TotalSize             int64   `json:"total_size"`
+	TotalHashedSize       int64   `json:"total_hashed_size"`
 	TotalHashedPercentage float64 `json:"total_hashed_percentage"`
 }
 
 // TotalHashSummary for the overall hashing process
 type TotalHashSummary struct {
-	Magic                string           `json:"magic"`
-	TotalFiles           int              `json:"total_files"`
-	TotalProcessingTime  float64          `json:"total_processing_time"`
-	AverageTimePerFile   float64          `json:"average_time_per_file"`
-	Files                []FileHashResult `json:"files"`
+	Magic               string           `json:"magic"`
+	TotalFiles          int              `json:"total_files"`
+	TotalProcessingTime float64          `json:"total_processing_time"`
+	AverageTimePerFile  float64          `json:"average_time_per_file"`
+	Files               []FileHashResult `json:"files"`
 }
 
 // calculateOptimalChunks determines the number of middle chunks.
@@ -245,13 +245,13 @@ func processSingleFile(filepath string, verbose, jsonOutput bool, targetCoverage
 	}
 
 	result := FileHashResult{
-		Filename:       filename,
-		Filepath:       filepath,
-		FileSize:       fileSize,
-		FSH24:          strings.ToUpper(hashHex),
-		Chunks:         chunks,
+		Filename:        filename,
+		Filepath:        filepath,
+		FileSize:        fileSize,
+		FSH24:           strings.ToUpper(hashHex),
+		Chunks:          chunks,
 		CoveragePercent: coveragePercent,
-		ProcessingTime: elapsedTime,
+		ProcessingTime:  elapsedTime,
 	}
 
 	if jsonOutput {
@@ -277,7 +277,13 @@ func processSingleFile(filepath string, verbose, jsonOutput bool, targetCoverage
 }
 
 // generateHashFileMultiple writes hash information to a .fsh24 file.
-func generateHashFileMultiple(filepaths []string, outputFilename string, targetCoverage float64) error {
+func generateHashFileMultiple(
+	filepaths []string,
+	outputFilename string,
+	targetCoverage float64,
+	absolutePaths bool,
+	baseDir string,
+) error {
 	f, err := os.Create(outputFilename)
 	if err != nil {
 		return fmt.Errorf("failed to create output file %s: %w", outputFilename, err)
@@ -361,7 +367,30 @@ func generateHashFileMultiple(filepaths []string, outputFilename string, targetC
 			// This file was skipped due to an error, already warned.
 			continue
 		}
-		line := fmt.Sprintf("%s|%d|%d|%s\n", strings.ToUpper(res.hashHex), res.chunks, res.fileSize, fp)
+
+		outputPath := fp
+		if !absolutePaths {
+			// Make path relative to base directory
+			relPath, err := filepath.Rel(baseDir, fp)
+			if err != nil {
+				fmt.Printf(
+					"Warning: Could not make path %s relative to %s: %v. Using absolute path.\n",
+					fp,
+					baseDir,
+					err,
+				)
+			} else {
+				outputPath = relPath
+			}
+		}
+
+		line := fmt.Sprintf(
+			"%s|%d|%d|%s\n",
+			strings.ToUpper(res.hashHex),
+			res.chunks,
+			res.fileSize,
+			outputPath,
+		)
 		_, err = f.WriteString(line)
 		if err != nil {
 			return fmt.Errorf("failed to write line for %s to %s: %w", fp, outputFilename, err)
@@ -372,7 +401,10 @@ func generateHashFileMultiple(filepaths []string, outputFilename string, targetC
 }
 
 // verifyHashFile reads a .fsh24 file and verifies associated files.
-func verifyHashFile(hashFilename string, verbose, jsonOutput bool) (VerificationSummary, []FileVerificationResult, error) {
+func verifyHashFile(
+	hashFilename string,
+	verbose, jsonOutput bool,
+) (VerificationSummary, []FileVerificationResult, error) {
 	_, err := os.Stat(hashFilename)
 	if err != nil {
 		return VerificationSummary{}, nil, fmt.Errorf("hash file not found: %s", hashFilename)
@@ -385,18 +417,24 @@ func verifyHashFile(hashFilename string, verbose, jsonOutput bool) (Verification
 	lines := strings.Split(string(content), "\n")
 
 	if len(lines) == 0 || !strings.HasPrefix(strings.TrimSpace(lines[0]), "FSH24") {
-		return VerificationSummary{}, nil, fmt.Errorf("invalid checksum file. This file is not a FSH24 checksum v1 file")
+		return VerificationSummary{}, nil, fmt.Errorf(
+			"invalid checksum file. This file is not a FSH24 checksum v1 file",
+		)
 	}
 
 	results := []FileVerificationResult{}
 	var (
-		verified    int
-		failed      int
-		totalSize   int64
+		verified        int
+		failed          int
+		totalSize       int64
 		totalHashedSize int64
 	)
 
 	startTime := time.Now()
+
+	// Determine the base directory for relative paths.
+	// This should be the directory where the .fsh24 file resides.
+	hashFileDir := filepath.Dir(hashFilename)
 
 	var wg sync.WaitGroup
 	fileChan := make(chan FileVerificationResult, len(lines)-1) // Buffered channel for results
@@ -435,13 +473,19 @@ func verifyHashFile(hashFilename string, verbose, jsonOutput bool) (Verification
 		}
 		pathFromFile := parts[3]
 
+		// Resolve the file path: if it's relative, join it with the hash file's directory
+		currentPath := pathFromFile
+		if !filepath.IsAbs(pathFromFile) {
+			currentPath = filepath.Join(hashFileDir, pathFromFile)
+		}
+
 		wg.Add(1)
-		go func(expHash string, chk int, fSize int64, currentPath string) { 
+		go func(expHash string, chk int, fSize int64, currentPath string) {
 			defer wg.Done()
 
 			result := FileVerificationResult{
 				Filepath:     currentPath,
-				Filename:     filepath.Base(currentPath), 
+				Filename:     filepath.Base(currentPath),
 				ExpectedHash: expHash,
 				ExpectedSize: fSize,
 			}
@@ -458,16 +502,20 @@ func verifyHashFile(hashFilename string, verbose, jsonOutput bool) (Verification
 
 			currentSize := fileInfo.Size()
 			result.ActualSize = currentSize
-			
+
 			// This happens inside the goroutine, so we need a mutex for shared variables
 			// Or, sum them up after all goroutines finish processing their result.
 			// Let's collect results and sum them up outside the goroutines for simplicity and less locking.
 
-
 			if currentSize != fSize {
 				result.Status = "size_mismatch"
 				if !jsonOutput {
-					fmt.Printf("!SIZE MISMATCH: %s (expected: %d, actual: %d)\n", currentPath, fSize, currentSize)
+					fmt.Printf(
+						"!SIZE MISMATCH: %s (expected: %d, actual: %d)\n",
+						currentPath,
+						fSize,
+						currentSize,
+					)
 				}
 				fileChan <- result
 				return
@@ -475,7 +523,13 @@ func verifyHashFile(hashFilename string, verbose, jsonOutput bool) (Verification
 
 			// Show "Checking..." message in verbose mode
 			if verbose && !jsonOutput {
-				fmt.Printf("%s|%d|%d|%s| Checking...      \r", expHash, chk, fSize, currentPath) // spaces to clear previous line
+				fmt.Printf(
+					"%s|%d|%d|%s| Checking...      \r",
+					expHash,
+					chk,
+					fSize,
+					currentPath,
+				) // spaces to clear previous line
 			} else {
 				fmt.Printf("%s| Checking...      \r", currentPath)
 			}
@@ -503,7 +557,13 @@ func verifyHashFile(hashFilename string, verbose, jsonOutput bool) (Verification
 				result.Status = "hash_mismatch"
 				if !jsonOutput {
 					if verbose {
-						fmt.Printf("%s|%d|%d|%s| HASH MISMATCH ✗\n", expHash, chk, fSize, currentPath)
+						fmt.Printf(
+							"%s|%d|%d|%s| HASH MISMATCH X\n",
+							expHash,
+							chk,
+							fSize,
+							currentPath,
+						)
 					} else {
 						fmt.Printf("HASH MISMATCH: %s\n", currentPath)
 					}
@@ -511,13 +571,13 @@ func verifyHashFile(hashFilename string, verbose, jsonOutput bool) (Verification
 			} else {
 				result.Status = "verified"
 				if verbose && !jsonOutput {
-					fmt.Printf("%s|%d|%d|%s| Verified ✓       \n", expHash, chk, fSize, currentPath)
+					fmt.Printf("%s|%d|%d|%s| Verified √       \n", expHash, chk, fSize, currentPath)
 				} else {
-					fmt.Printf("%s| Verified ✓       \n", currentPath)
+					fmt.Printf("%s| Verified √         \n", currentPath)
 				}
 			}
 			fileChan <- result
-		}(expectedHash, chunks, fileSize, pathFromFile)
+		}(expectedHash, chunks, fileSize, currentPath)
 	}
 
 	// Wait for all goroutines to complete and close the channel
@@ -550,14 +610,14 @@ func verifyHashFile(hashFilename string, verbose, jsonOutput bool) (Verification
 	}
 
 	summary := VerificationSummary{
-		Verified:            verified,
-		Failed:              failed,
-		Total:               verified + failed,
-		Success:             failed == 0,
-		TotalTime:           totalTime,
-		AverageTimePerFile:  totalTime / float64(verified+failed),
-		TotalSize:           totalSize,
-		TotalHashedSize:     totalHashedSize,
+		Verified:              verified,
+		Failed:                failed,
+		Total:                 verified + failed,
+		Success:               failed == 0,
+		TotalTime:             totalTime,
+		AverageTimePerFile:    totalTime / float64(verified+failed),
+		TotalSize:             totalSize,
+		TotalHashedSize:       totalHashedSize,
 		TotalHashedPercentage: totalHashedPercentage,
 	}
 
@@ -571,8 +631,16 @@ func verifyHashFile(hashFilename string, verbose, jsonOutput bool) (Verification
 		if (verified + failed) > 0 {
 			fmt.Printf("Average time per file: %.3fs\n", totalTime/float64(verified+failed))
 		}
-		fmt.Printf("Total file size: %s bytes (%.2f GB)\n", formatNumber(totalSize), float64(totalSize)/(1024*1024*1024))
-		fmt.Printf("Total hashed size: %s bytes (%.2f GB)\n", formatNumber(totalHashedSize), float64(totalHashedSize)/(1024*1024*1024))
+		fmt.Printf(
+			"Total file size: %s bytes (%.2f GB)\n",
+			formatNumber(totalSize),
+			float64(totalSize)/(1024*1024*1024),
+		)
+		fmt.Printf(
+			"Total hashed size: %s bytes (%.2f GB)\n",
+			formatNumber(totalHashedSize),
+			float64(totalHashedSize)/(1024*1024*1024),
+		)
 		fmt.Printf("Total hash percentage: %.4f%%\n", totalHashedPercentage)
 	} else {
 		fmt.Printf("Verification: %d verified, %d failed\n", verified, failed)
@@ -589,39 +657,36 @@ func formatNumber(n int64) string {
 		return s
 	}
 
-	// Calculate how many commas are needed
-	numCommas := (le - 1) / 3  // Example: 4 digits (1,000) -> (4-1)/3 = 1 comma
-	                           // Example: 6 digits (100,000) -> (6-1)/3 = 1 comma (incorrect, should be 2)
-                               // Example: 7 digits (1,000,000) -> (7-1)/3 = 2 commas (incorrect, should be 2)
+	numCommas := (le - 1) / 3
 
-    // A simpler way to count commas is: (length - 1) / 3, but this needs careful handling of the first segment
-    // Let's adjust for more robust segment handling.
-    // The first segment might be 1, 2, or 3 digits.
-    firstSegmentLen := le % 3
-    if firstSegmentLen == 0 {
-        firstSegmentLen = 3 // If divisible by 3, the first segment is 3 digits
-    }
+	// A simpler way to count commas is: (length - 1) / 3, but this needs careful handling of the first segment
+	// Let's adjust for more robust segment handling.
+	// The first segment might be 1, 2, or 3 digits.
+	firstSegmentLen := le % 3
+	if firstSegmentLen == 0 {
+		firstSegmentLen = 3 // If divisible by 3, the first segment is 3 digits
+	}
 
-    // Total length of the output string including commas
-    outputLen := le + numCommas
-    out := make([]byte, outputLen)
+	// Total length of the output string including commas
+	outputLen := le + numCommas
+	out := make([]byte, outputLen)
 
-    outIdx := 0 // Start filling from the beginning of the output byte slice
-    sIdx := 0   // Start reading from the beginning of the source string
+	outIdx := 0 // Start filling from the beginning of the output byte slice
+	sIdx := 0   // Start reading from the beginning of the source string
 
-    // Handle the first segment (1, 2, or 3 digits)
-    copy(out[outIdx:outIdx+firstSegmentLen], s[sIdx:sIdx+firstSegmentLen])
-    outIdx += firstSegmentLen
-    sIdx += firstSegmentLen
+	// Handle the first segment (1, 2, or 3 digits)
+	copy(out[outIdx:outIdx+firstSegmentLen], s[sIdx:sIdx+firstSegmentLen])
+	outIdx += firstSegmentLen
+	sIdx += firstSegmentLen
 
-    // Add commas and subsequent 3-digit segments
-    for i := 0; i < numCommas; i++ {
-        out[outIdx] = ','
-        outIdx++
-        copy(out[outIdx:outIdx+3], s[sIdx:sIdx+3])
-        outIdx += 3
-        sIdx += 3
-    }
+	// Add commas and subsequent 3-digit segments
+	for i := 0; i < numCommas; i++ {
+		out[outIdx] = ','
+		outIdx++
+		copy(out[outIdx:outIdx+3], s[sIdx:sIdx+3])
+		outIdx += 3
+		sIdx += 3
+	}
 
 	return string(out)
 }
@@ -632,34 +697,50 @@ Flags:
   -v, --verbose         Verbose output
   -j, --json            JSON output (prints to console)
   -r, --recursive       Recursively process folders
+  -a, --absolute        Use absolute paths in .fsh24 file
   -h, --help            Show this help message
 Examples:
   fsh24 file.txt
   fsh24 checksums.fsh24
   fsh24 -r folder/
   fsh24 -o output.fsh24 file.txt
+  fsh24 -a my_file.zip  // Generates .fsh24 with absolute path
 
   You can also just drag'n'drop files and folders to fsh24
 
 Press Enter to exit...`)
-  fmt.Scanln()
+	fmt.Scanln()
 }
 
 func main() {
-	
+
 	var (
-		outputFile string
-		verbose    bool
-		jsonOutput bool
-		recursive  bool
+		outputFile   string
+		verbose      bool
+		jsonOutput   bool
+		recursive    bool
+		absolutePaths bool
 		showHelpFlag bool
 	)
 
-	pflag.StringVarP(&outputFile, "output",    "o", "", "Output .fsh24 file name (default: checksums.fsh24)")
-	pflag.BoolVarP(&verbose,      "verbose",   "v", false, "Verbose output")
-	pflag.BoolVarP(&jsonOutput,   "json",      "j", false, "JSON output")
-	pflag.BoolVarP(&recursive,    "recursive", "r", false, "Recursively process folders")
-	pflag.BoolVarP(&showHelpFlag, "help",      "h", false, "Show help message")
+	pflag.StringVarP(
+		&outputFile,
+		"output",
+		"o",
+		"",
+		"Output .fsh24 file name (default: checksums.fsh24)",
+	)
+	pflag.BoolVarP(&verbose, "verbose", "v", false, "Verbose output")
+	pflag.BoolVarP(&jsonOutput, "json", "j", false, "JSON output")
+	pflag.BoolVarP(&recursive, "recursive", "r", false, "Recursively process folders")
+	pflag.BoolVarP(
+		&absolutePaths,
+		"absolute",
+		"a",
+		false,
+		"Use absolute paths in .fsh24 file",
+	) // New flag
+	pflag.BoolVarP(&showHelpFlag, "help", "h", false, "Show help message")
 	pflag.Parse()
 
 	// Handle help flag
@@ -671,22 +752,29 @@ func main() {
 	args := pflag.Args()
 
 	if !jsonOutput {
-		fmt.Println("FSH24 - Fast Sample based Hash 24-byte.\nMobCat 2025\n")
+		fmt.Println("FSH24 - Fast Sample based Hash 24-byte.\nMobCat 20250715\n")
 	}
 
 	if len(args) == 0 {
 		fmt.Println("Usage: fsh24 [flags] <file(s)|folder(s)|.fsh24 file>")
 		fmt.Print("\nPress 'h' for help or any other key to exit: ")
-		
+
 		var input string
 		fmt.Scanln(&input)
-		
+
 		if strings.ToLower(strings.TrimSpace(input)) == "h" {
 			fmt.Println()
 			showHelp()
 			return
 		}
-		
+
+		os.Exit(1)
+	}
+
+	// Get the current working directory. This will be the base for relative paths.
+	cwd, err := os.Getwd()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error getting current working directory: %v\n", err)
 		os.Exit(1)
 	}
 
@@ -744,7 +832,11 @@ func main() {
 					defer wg.Done()
 					result, err := processSingleFile(filePath, verbose, true, 0.01)
 					if err != nil {
-						fmt.Fprintf(os.Stderr, "Warning: Skipping file %s due to error: %v\n", filePath, err)
+						fmt.Fprintf(os.Stderr,
+							"Warning: Skipping file %s due to error: %v\n",
+							filePath,
+							err,
+						)
 						return
 					}
 					resultChan <- result
@@ -816,7 +908,8 @@ func main() {
 					outputFileActual = "checksums.fsh24"
 				}
 
-				err := generateHashFileMultiple(processedFiles, outputFileActual, 0.01)
+				// Pass absolutePaths and cwd to generateHashFileMultiple
+				err := generateHashFileMultiple(processedFiles, outputFileActual, 0.01, absolutePaths, cwd)
 				if err != nil {
 					fmt.Fprintf(os.Stderr, "Error generating hash file: %v\n", err)
 					os.Exit(1)
@@ -847,8 +940,16 @@ func main() {
 					}
 
 					fmt.Printf("\nProcessed %d files in %.3fs\n", len(processedFiles), totalProcessingTime)
-					fmt.Printf("Total file size: %s bytes (%.2f GB)\n", formatNumber(totalFileSize), float64(totalFileSize)/(1024*1024*1024))
-					fmt.Printf("Total hashed size: %s bytes (%.2f GB)\n", formatNumber(totalHashedSize), float64(totalHashedSize)/(1024*1024*1024))
+					fmt.Printf(
+						"Total file size: %s bytes (%.2f GB)\n",
+						formatNumber(totalFileSize),
+						float64(totalFileSize)/(1024*1024*1024),
+					)
+					fmt.Printf(
+						"Total hashed size: %s bytes (%.2f GB)\n",
+						formatNumber(totalHashedSize),
+						float64(totalHashedSize)/(1024*1024*1024),
+					)
 					fmt.Printf("Total hash percentage: %.4f%%\n", totalHashPercentage)
 				}
 
