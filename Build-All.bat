@@ -6,9 +6,21 @@ if not exist "go.mod" (
 if not exist "go.sum" (
 	go mod tidy
 )
-setlocal
 
-rem Define the base output name for your executable (without extension)
+:: Clean up old builds
+echo === Cleanup ===
+del fsh24_Pi3_arm64
+del fsh24-linux-amd64.zip
+del fsh24-linux-amd64
+del fsh24-Mac-arm64.zip
+del fsh24-mac-arm64
+del fsh24-RaspberryPi-arm64.zip
+del fsh24-Windows-x64.zip
+del fsh24.exe
+echo Done.
+
+:: Define the base output name for your executable (without extension)
+setlocal
 set OUTPUT_BASE_NAME=fsh24
 set LDFLAGS="-s"
 set GO_SOURCE_FILE=main.go
@@ -44,6 +56,8 @@ set CGO_ENABLED=0
 go build -ldflags %LDFLAGS% -o %OUTPUT_BASE_NAME%_Pi3_arm64 %GO_SOURCE_FILE%
 echo Done.
 echo.
+
+pause
 
 endlocal
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -84,3 +98,18 @@ echo === Packing windows exe ===
 upx --best fsh24.exe
 echo Done.
 
+echo == Making Release Packs ===
+setlocal
+set "ZIP=C:\Program Files\7-Zip\7z.exe"
+
+"%ZIP%" a -tzip fsh24-linux-amd64.zip fsh24-linux-amd64
+del fsh24-linux-amd64
+"%ZIP%" a -tzip fsh24-Mac-arm64.zip fsh24-mac-arm64
+del fsh24-mac-arm64
+"%ZIP%" a -tzip fsh24-RaspberryPi-arm64.zip fsh24_Pi3_arm64
+del fsh24_Pi3_arm64
+"%ZIP%" a -tzip fsh24-Windows-x64.zip fsh24.exe Windows-Install.bat Windows-uninstall.bat
+
+endlocal
+echo Done.
+pause
